@@ -87,6 +87,9 @@ transition: all 0.4s ease 0s;
 				      <div id="logo">
 				        <a href="extra.html"><img src="img/logo2.png" alt="KLE" /></a>
 				      </div>
+				      <div id="logo" style="align-self: right">
+				      	<a href="extra.html"><img src="img/kle-logo.png" alt="KLE" /></a>
+				      </div>
 				      		    		
 			    	</div>
 			    </div>
@@ -105,7 +108,7 @@ transition: all 0.4s ease 0s;
 							<p class="text-white text-uppercase">
 								Improved Product with Quality Materials
 							</p>
-							<a href="#" class="primary-btn header-btn text-uppercase">GitHub Link</a>
+							<a href="https://github.com/akshaybhandare/WT-project" class="primary-btn header-btn text-uppercase">GitHub Link</a>
 						</div>
 						<!--div class="banner-img col-lg-6 col-md-6">
 							<img class="img-fluid" src="img/banner-img.png" alt="">
@@ -138,7 +141,7 @@ transition: all 0.4s ease 0s;
 										Product are eco friendly.
 									</p>
 									
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(4500)">
+									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(4500,1)">
 								</div>
 							</div>
 						</div>	
@@ -153,7 +156,7 @@ transition: all 0.4s ease 0s;
 									<p>
 										Product are eco friendly.
 									</p>
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(5000)">
+									<input type="button" class="primary-btn text-uppercase" name="add2" id="add2" value="Add to cart" onclick="addprice1(5000,2)">
 								</div>
 							</div>
 						</div>	
@@ -169,7 +172,7 @@ transition: all 0.4s ease 0s;
 									<p>
 										Product are eco friendly.
 									</p>
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(9000)">
+									<input type="button" class="primary-btn text-uppercase" name="add3" id="add3" value="Add to cart" onclick="addprice1(9000,3)">
 								</div>
 							</div>
 						</div>	
@@ -184,7 +187,7 @@ transition: all 0.4s ease 0s;
 									<p>
 										Product are eco friendly.
 									</p>
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(5400)">
+									<input type="button" class="primary-btn text-uppercase" name="add4" id="add4" value="Add to cart" onclick="addprice1(5400,4)">
 								</div>
 							</div>
 						</div>	
@@ -199,7 +202,7 @@ transition: all 0.4s ease 0s;
 									<p>
 										Product are eco friendly.
 									</p>
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(8500)">
+									<input type="button" class="primary-btn text-uppercase" name="add5" id="add5" value="Add to cart" onclick="addprice1(8500,5)">
 								</div>
 							</div>
 						</div>
@@ -214,7 +217,7 @@ transition: all 0.4s ease 0s;
 									<p>
 										Product are eco friendly.
 									</p>
-									<input type="button" class="primary-btn text-uppercase" name="add1" id="add1" value="Add to cart" onclick="addprice1(6500)">
+									<input type="button" class="primary-btn text-uppercase" name="add6" id="add6" value="Add to cart" onclick="addprice1(6500,6)">
 								</div>
 							</div>
 						</div>
@@ -278,6 +281,8 @@ transition: all 0.4s ease 0s;
     </div>
     <div id="alertinfo" class="dv"></div>
     <br><br><br>
+    <div class="button_cont" align="center"><input type="button" class="example_c" value="Reset" onclick="resetbtn()" /></div>
+    <br>
     <div class="button_cont" align="center"><input type="submit" class="example_c" value="Pay Now" onclick="launchBOLT(); return false;" /></div>
 	</form>
 						
@@ -332,17 +337,36 @@ $('#payment_form').bind('keyup blur', function(){
 </script>
 <script type="text/javascript">
 	
-	
+	var a=0;
+	var b=0;
+	var c=0;
+	var d=0;
+	var e=0;
+	var f=0;
 
-	function addprice1(amt){
-		
-		//var t = document.getElementById("ladd1").value;
-		//var total = total + parseInt(amt,10) ;
-		//var total = total + amt ;
+	function addprice1(amt,k){
+		if ( k === 1 ){
+		document.getElementById("add"+ k).value =  ++a;}
+		if ( k === 2 ){
+		document.getElementById("add"+ k).value =  ++b;}
+		if ( k === 3 ){
+		document.getElementById("add"+ k).value =  ++c;}
+		if ( k === 4 ){
+		document.getElementById("add"+ k).value =  ++d;}
+		if ( k === 5 ){
+		document.getElementById("add"+ k).value =  ++e;}
+		if ( k === 6 ){
+		document.getElementById("add"+ k).value =  ++f;}
 		document.getElementById("amount").value = parseInt(document.getElementById("amount").value) + amt ;
-		//total = document.getElementById("amount").value;
+	
 	}
 
+	
+function resetbtn(){
+	
+	window.location.reload()
+	document.getElementById("amount").value = 0.0 ;
+}
 
 </script>
 <script type="text/javascript"><!--
