@@ -7,6 +7,13 @@ This is shopping website developed with node.js. Website uses dummy gateway by P
   - Payment Gateway
   - Database
 
+
+## Team Members
+Ajay Wadki
+Akshay Y B (01fe16bcs022)
+Ajit Sirsi (01fe16bcs018)
+Akshay Hampiholi (01fe16bcs020)
+
 # How to Install
 Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
   - clone or download this repo
