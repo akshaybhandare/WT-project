@@ -22,6 +22,7 @@ Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
  ```sh
 $ npm install --production
 $ npm install express
+$ npm install mysql
 ```
    - Also need to install ejs 
 ```sh
