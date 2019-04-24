@@ -9,7 +9,7 @@ This is shopping website developed with node.js. Website uses dummy gateway by P
 
 
 ## Team Members
-  - Ajay Wadki
+  - Ajay Wadki (01fe16bcs017)
   - Akshay Y B (01fe16bcs022)
   - Ajit Sirsi (01fe16bcs018)
   - Akshay Hampiholi (01fe16bcs020)
