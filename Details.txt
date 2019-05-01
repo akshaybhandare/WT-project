@@ -1,0 +1,10 @@
+Module Name
+Structered Enquiry 1
+TSL-13.0
+
+Team Details
+
+Ajay Wadki (01fe16bcs017)
+Akshay Y Bhandare (01fe16bcs022)
+Akshay Hampiholi (01fe16bcs020)
+Ajit Sirsi (01fe16bcs018)
